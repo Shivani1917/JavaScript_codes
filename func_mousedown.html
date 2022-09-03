@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <title>Document</title>
+</head>
+<body>
+    <p onmousedown="clickdown(this)" onmouseup="clickup(this)">Click on me</p>
+
+    <script>
+        function clickdown(obj){
+            obj.innerHTML="You clicked on me!";
+        }
+        function clickup(obj){
+            obj.innerHTML="You released me!";
+        }
+    </script>
+</body>
+</html>

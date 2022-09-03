@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   
+    <h2>Lets check the windows & screens size</h2>
+
+    <p id="demo"></p>
+
+    <script>
+
+        document.getElementById("demo").innerHTML=
+
+        // windows
+        "The browser width is:" +window.innerWidth +"px<br>" +
+        "The browser height is:" +window.innerHeight +"px<br>" +"<br>" +
+        
+        // screens
+        "Screen Width is:" +screen.width +"px<br>" +
+        "Screen Height is:" +screen.height +"px<br>" +"<br>" +
+        
+        // available
+        "Available Screen Width is:"  +screen.availWidth +"px<br>" +
+        "Available Screen Height is:"  +screen.availHeight +"px<br>" +"<br>" +
+
+        // screen color
+        "Screen Color depth is:" + screen.colorDepth +"<br>" +"<br>" +
+
+        // window location href
+        "Page location is:" +window.location.href +"<br>" +
+        "Page location is:" +window.location.protocol;
+    </script>
+</body>
+</html>

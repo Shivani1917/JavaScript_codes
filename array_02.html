@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array</title>
+</head>
+<body>
+    <script>
+       var car=["maruti","ford","GM"];
+
+        //INCREASING ARRAY
+
+       car[3]="lemon";
+       document.write("lemon at car[3] " + car[3]);
+       document.write("<br/>");
+
+       //PUSH------ELEMENT ADDED AT LAST
+      
+        car.push("lemon");
+        document.write("PUSH: " + car);
+        document.write("<br/>");
+       
+        //car[car.length]="lemon";
+        //document.write(car);
+
+        //POP------REMOVE LAST ELEMENT
+
+        car.pop();
+        document.write("POP: " + car);
+        document.write("<br/>");
+
+        //SHIFT & UNSHIFT
+
+        car.shift();
+        document.write(car);
+        document.write("<br/>");
+       // car.unshift();
+        car.unshift("lemon");
+        document.write(car);
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("<br/>");
+
+        //DELETING A ELEMENTS
+      
+        var fruits=["banana","orange","kiwi"];
+        delete fruits[2];
+        document.write(fruits);
+        document.write("<br/>");
+
+        //SPICING THE ARRAY
+        var fruits=["banana","orange","kiwi","mango"];
+        //fruits.splice(2,0,"lemon","apple");
+        //fruits.splice(2,2,"lemon","apple");
+        fruits.splice(0,1);
+        document.write(fruits);
+        document.write("<br/>");
+
+        //SLICING THE ARRAY
+        var fruits=["banana","orange","kiwi","lemon","mango"];
+        //var basket=fruits.slice(2);
+        var basket=fruits.slice(1,3);
+        document.write(basket);
+        document.write("<br/>");
+
+
+        //MERGING
+        var a=["a1","a2"];
+        var b=["b1","b2"];
+        var c=a.concat(b);
+        document.write(c);
+        document.write("<br/>");
+
+        var a=["a3","a4"];
+        var b=["b3","b4"];
+        var d=["d1","d2"];
+        var c=a.concat(b,d);
+        document.write(c);
+        document.write("<br/>");                                                   
+
+    </script>
+</body>
+</html>
